@@ -1,3 +1,22 @@
 // -----------------------------------------------------------------------------
 // Mixins
 // -----------------------------------------------------------------------------
+@mixin social-btn($bg-color) {
+  display: inline-block;
+  font-family: "Roboto Mono", monospace;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  height: 40px;
+  min-width: 150px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-color;
+
+  &:hover {
+    background-color: lighten($bg-color, 10%);
+    text-decoration: none;
+  }
+}

@@ -1,3 +1,46 @@
 // -----------------------------------------------------------------------------
 // Homepage
 // -----------------------------------------------------------------------------
+.about {
+  &__content {
+    &__socials {
+      margin-bottom: 40px;
+
+      a {
+        margin-bottom: 20px;
+
+        &.linkedin {
+          @include social-btn(#0a66c2);
+        }
+
+        &.twitter {
+          @include social-btn(#1da1f2);
+        }
+
+        &.github {
+          @include social-btn(#000);
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        @include media-breakpoint-up(md) {
+          margin: 0 12px 0 12px;
+        }
+      }
+
+      @include media-breakpoint-up(md) {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    &__bio {
+      p {
+        font-size: 18px;
+        font-family: "Roboto Mono", monospace;
+      }
+    }
+  }
+}
