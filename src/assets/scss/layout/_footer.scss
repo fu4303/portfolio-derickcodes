@@ -2,14 +2,29 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 .footer {
-	border-top: 1px solid $light-grey;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  font-family: "Roboto Mono", monospace;
+  color: #ccc;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background-color: #ddd;
+  }
 }
 
 footer[data-emergence="hidden"] {
-	background-color: #404041;
-	color: #fff;
+  background-color: #404041;
+  color: #fff;
 }
 
 footer[data-emergence="visible"] {
-	background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
