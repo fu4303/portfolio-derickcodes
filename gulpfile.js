@@ -287,6 +287,12 @@ function minifyCss() {
     .pipe(dest("dist/assets/css"));
 }
 
+// CNAME FILE
+function cnameFile() {
+  console.log("---------------CNAME FILE---------------");
+  return src("src/CNAME").pipe(dest("dist"));
+}
+
 // RUN ALL LINTERS
 exports.linters = series(htmlLint, scssLint, jsLint);
 
@@ -319,6 +325,7 @@ exports.prod = series(
   concatScripts,
   minifyScripts,
   minifyCss,
+  cnameFile,
   renameSources,
   prettyHTML,
   browserSyncInit
