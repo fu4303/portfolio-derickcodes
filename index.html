@@ -1,0 +1,126 @@
+<!--- Base layout, used on every page --->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quantum - A Front End Starter Kit</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="author" content="Derick Moncado" />
+    <meta name="description" content="Quantum - A frontend starter kit that is focused on automated web developement." />
+    <meta name="keywords" content="keywords,here" />
+    <link rel="favicon" href="images/favicons/favicon.ico" type="" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+    <!--- CSS --->
+    <!-- build:css -->
+    <link rel="stylesheet" href="assets/vendor/css/all.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- endbuild -->
+
+    <!--- Favicons --->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <main role="main">
+        <!-- (index.html) --->
+
+        <!--- Header --->
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <div class="header__content--left">
+                        <h1>Derick<br />Moncado</h1>
+                        <h2>
+                            California based <br />
+                Front End Developer
+              </h2>
+                    </div>
+                    <div class="header__content--right">
+                        <div class="headshot">
+                            <div class="headshot__inner"></div>
+                            <img src="assets/images/headshot.jpg" alt="Derick Moncado, front end developer from California" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--- Body --->
+        <section class="about">
+            <div class="container">
+                <div class="about__content">
+                    <div class="about__content__socials">
+                        <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/derickmoncado/" title="My LinkedIn">LinkedIn</a>
+                        <a class="twitter" target="_blank" href="https://twitter.com/derickcodes" title="My Twitter">Twitter</a>
+                        <a class="github" target="_blank" href="https://github.com/dmoncado" title="My GitHub">GitHub</a>
+                    </div>
+                    <div class="about__content__bio">
+                        <p>
+                            Hola 👋 I'm Derick, a front-end developer who is passionate about
+                            building clean, usable, and accessible websites and applications. I
+                            come from a background in design but focus primarily on code. I’ve
+                            been working professionally as a developer
+                            <strong>for over 6 years.</strong><br /><br />
+                Some technologies I am currently focusing on include Angular,
+                TypeScript, and a little bit of React. I'm no Mark Zuckerberg, but
+                with a strong cup of coffee and an awesome playlist, I can build some
+                pretty cool stuff.
+              </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--- Footer --->
+    <footer class="footer">
+        <div class="container">
+            <p>
+                &copy; Derick Moncado 2021
+            </p>
+        </div>
+    </footer>
+
+    <!--- Scripts - scrips inbetween these special tags get compiled + concatenated --->
+    <!-- build:js -->
+    <script src="assets/vendor/js/all.js"></script>
+    <script src="assets/vendor/js/jquery.js"></script>
+    <script src="assets/vendor/js/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/js/slick.js"></script>
+    <script src="assets/vendor/js/emergence.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- endbuild -->
+
+    <!--- Init Emergence --->
+    <script>
+        emergence.init({
+            elemCushion: 0.75, // how much of element needs to be visible (%) for emergence to kick in
+        });
+    </script>
+</body>
+
+</html>
