@@ -4,7 +4,9 @@
   "description": "Quantum is a Bootstrapped, Gulp-powered, Sassified, frontend boilerplate with Browsersync and hot reloading. All built on top of Handlebars.js for easy HTML templating.",
   "homepage": "https://dmoncado.github.com/derick-codes",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
   "author": "Derick Moncado",
   "license": "MIT",
   "repository": {

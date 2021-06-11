@@ -54,6 +54,14 @@
         overflow: hidden;
         box-shadow: 0px 0px 30px 4px rgba(0, 0, 0, 0.3);
         position: relative;
+        background: url("../images/headshot.jpg");
+        background-size: cover;
+        transition: background-image 0.5s ease-in-out;
+
+        &:hover {
+          background: url("../images/headshot-orange.jpg");
+          background-size: cover;
+        }
 
         .headshot__inner {
           position: absolute;
