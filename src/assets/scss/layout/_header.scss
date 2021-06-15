@@ -21,7 +21,7 @@
       h1 {
         font-family: "Poppins", sans-serif;
         text-transform: uppercase;
-        font-size: 50px;
+        font-size: 54px;
         line-height: 1em;
         margin: 0 0 10px 0;
         align-items: center;
@@ -31,6 +31,7 @@
         font-family: "Roboto Mono", monospace;
         font-size: 22px;
         color: #666666;
+        margin-bottom: 0;
       }
 
       @include media-breakpoint-up(md) {
